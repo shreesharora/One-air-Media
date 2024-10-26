@@ -1,0 +1,44 @@
+// hero imaage
+#hero-img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover   ;
+}
+#hero-image-wrapper {
+    position: relative;
+}
+#hero-image-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(182, 182, 182, 0.1);
+}
+
+// slide images
+.feature-slide .image-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.feature-slide .image-wrapper img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-image-slide {
+    background: linear-gradient(90deg, rgba(132, 119, 83, 0.76) 0%, rgba(30, 27, 19, 0.76) 100%);
+}
+.home-image-slide img {
+    clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
+}
+.home-image-slide-text {
+    font-size: 50px;
+}
