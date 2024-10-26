@@ -11,7 +11,7 @@ class HomeFeatures extends Component
         {
             id : 2,
             title : "CONCEPT AND SCRIPT ",
-            description : "We draf original content to best convey your messages to world"
+            description : "We draft original content to best convey your messages to world"
         },
         {
             id : 3,
@@ -23,7 +23,7 @@ class HomeFeatures extends Component
     getImage(id) {
         const imagePath = require(`../assets/img/home-slides/slide-${id}.jpeg`);
         return (
-            <div class="image-wrapper">
+            <div className="image-wrapper">
                 <img src={imagePath} alt="Description" className="img-fluid" />
             </div>
         );

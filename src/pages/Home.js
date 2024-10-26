@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Button from 'react-bootstrap/Button'
+import { Link } from 'react-router-dom';
 import HomeFeatures from "../components/HomeFeatures";
 import HomeBranding from "../components/HomeBranding"
 
@@ -19,8 +19,8 @@ class Home extends Component
                     <h3 id="hero-tag-line">THE PLATFORM BUILT FOR CREATORS<br />WHERE ENTERTAINMENT MEETS EVERY SCREEN</h3>
                     <br />
                     <div id="hero-actions" className="d-flex gap-2">
-                        <Button variant="outline-light">Let's Create</Button>
-                        <Button variant="outline-light">Let's Stream</Button>
+                        <Link to="/create" className="btn btn-outline-light">Let's Create</Link>
+                        <Link to="/stream" className="btn btn-outline-light">Let's Stream</Link>
                     </div>
                 </div>
             </section>

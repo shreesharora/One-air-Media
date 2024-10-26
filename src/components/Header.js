@@ -14,17 +14,17 @@ class Header extends Component
         return (
             <header>
                 <Navbar expand="md" bg="dark" data-bs-theme="dark" className="border-bottom border-white py-3">
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand to="/" as={Link}>
                         <img src={logo} alt="one air media" height="50" />
                     </Navbar.Brand>
                     <NavbarToggle />
                     <NavbarCollapse className="justify-content-md-end">
                         <Nav>
-                            <Nav.Link href="#create">Let's Create</Nav.Link>
-                            <Nav.Link href="#features">Let's Stream</Nav.Link>
-                            <Nav.Link href="#pricing">About Us</Nav.Link>
-                            <Nav.Link href="#pricing">Subscribe</Nav.Link>
-                            <Nav.Link href="#pricing">Contact Us</Nav.Link>
+                            <Nav.Link as={Link} to="/create">Let's Create</Nav.Link>
+                            <Nav.Link as={Link} to="/stream">Let's Stream</Nav.Link>
+                            <Nav.Link as={Link} to="/about-us">About Us</Nav.Link>
+                            <Nav.Link as={Link} to="/subscribe">Subscribe</Nav.Link>
+                            <Nav.Link as={Link} to="/contact-us">Contact Us</Nav.Link>
                         </Nav>
                     </NavbarCollapse>
                 </Navbar>

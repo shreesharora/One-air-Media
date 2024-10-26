@@ -4,8 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Header from "./Header";
 import Footer from "./Footer";
-import About from "../pages/About";
-import Contact from "../pages/Contact";
+import ComingSoon from "../pages/ComingSoon";
 import Home from "../pages/Home";
 
 class App extends Component
@@ -17,8 +16,11 @@ class App extends Component
                 <Header />
                   <Routes>
                     <Route path="/" Component={Home}></Route>
-                    {/* <Route path="/contact" Component={Contact}></Route> */}
-                    {/* <Route path="/about" Component={About}></Route> */}
+                    <Route path="/contact-us" Component={ComingSoon}></Route>
+                    <Route path="/about-us" Component={ComingSoon}></Route>
+                    <Route path="/subscribe" Component={ComingSoon}></Route>
+                    <Route path="/create" Component={ComingSoon}></Route>
+                    <Route path="/stream" Component={ComingSoon}></Route>
                   </Routes>
               </div>
               <Footer />
